@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html>
 <head lang="en">
     <meta charset="UTF-8"/>
     <title></title>
@@ -11,9 +11,7 @@
     </style>
 </head>
 <body>
-<div>
-    <a th:href="${host}" th:text="${host}" th:class="${class}">Hello World</a>
-</div>
-
+FreeMarker模板引擎
+<a href="${host}" class="${class}">${host}</a>
 </body>
 </html>

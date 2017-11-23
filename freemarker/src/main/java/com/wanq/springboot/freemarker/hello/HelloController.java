@@ -1,31 +1,22 @@
-package com.wanq.springboot.thymeleaf.web;
+package com.wanq.springboot.freemarker.hello;
+
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
 
-    @RequestMapping("/hello")
+    @RequestMapping("hello")
     @ResponseBody
     public String hello() {
         return "Hello world";
     }
 
     @RequestMapping("/")
-    public ModelAndView index(ModelMap modelMap) {
-        ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("host", "http://www.wanq.me");
-        modelAndView.addObject("class", "red");
-        return modelAndView;
-    }
-
-    @RequestMapping("/index")
-    public String index2(Model model) {
+    public String index(Model model) {
         model.addAttribute("host", "http://www.wanq.me");
         model.addAttribute("class", "red");
         return "index";

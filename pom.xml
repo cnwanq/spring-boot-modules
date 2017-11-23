@@ -12,6 +12,9 @@
         <module>hello</module>
         <module>properties</module>
         <module>thymeleaf</module>
+        <module>freemarker</module>
+        <module>velocity</module>
+        <module>swagger</module>
     </modules>
 
     <parent>

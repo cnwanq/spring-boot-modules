@@ -6,16 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="freemarker" />
         <module name="hello" />
         <module name="properties" />
+        <module name="swagger" />
         <module name="thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="freemarker" target="1.8" />
       <module name="hello" target="1.8" />
       <module name="properties" target="1.8" />
       <module name="spring-boot-modules" target="1.8" />
+      <module name="swagger" target="1.8" />
       <module name="thymeleaf" target="1.8" />
+      <module name="velocity" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
