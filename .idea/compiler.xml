@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hello" />
+        <module name="properties" />
+        <module name="thymeleaf" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hello" target="1.8" />
+      <module name="properties" target="1.8" />
+      <module name="spring-boot-modules" target="1.8" />
+      <module name="thymeleaf" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
