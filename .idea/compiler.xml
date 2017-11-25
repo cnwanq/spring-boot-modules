@@ -6,21 +6,45 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="async" />
+        <module name="exception" />
         <module name="freemarker" />
         <module name="hello" />
+        <module name="jdbc" />
+        <module name="jpa" />
+        <module name="log4j" />
+        <module name="mongodb" />
+        <module name="muti-data-source" />
+        <module name="mybatis" />
         <module name="properties" />
+        <module name="redis" />
+        <module name="scheduled" />
+        <module name="spring-security" />
         <module name="swagger" />
         <module name="thymeleaf" />
+        <module name="web-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="async" target="1.8" />
+      <module name="exception" target="1.8" />
       <module name="freemarker" target="1.8" />
       <module name="hello" target="1.8" />
+      <module name="jdbc" target="1.8" />
+      <module name="jpa" target="1.8" />
+      <module name="log4j" target="1.8" />
+      <module name="mongodb" target="1.8" />
+      <module name="muti-data-source" target="1.8" />
+      <module name="mybatis" target="1.8" />
       <module name="properties" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="scheduled" target="1.8" />
       <module name="spring-boot-modules" target="1.8" />
+      <module name="spring-security" target="1.8" />
       <module name="swagger" target="1.8" />
       <module name="thymeleaf" target="1.8" />
       <module name="velocity" target="1.8" />
+      <module name="web-aop" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,8 +13,19 @@
         <module>properties</module>
         <module>thymeleaf</module>
         <module>freemarker</module>
-        <module>velocity</module>
         <module>swagger</module>
+        <module>exception</module>
+        <module>jdbc</module>
+        <module>jpa</module>
+        <module>muti-data-source</module>
+        <module>redis</module>
+        <module>mongodb</module>
+        <module>mybatis</module>
+        <module>scheduled</module>
+        <module>async</module>
+        <module>log4j</module>
+        <module>web-aop</module>
+        <module>spring-security</module>
     </modules>
 
     <parent>
@@ -32,12 +43,15 @@
         <java.version>1.8</java.version>
 
         <mybatis-spring-boot>1.3.1</mybatis-spring-boot>
-        <mysql-connector>5.1.39</mysql-connector>
+        <!--<mysql-connector>5.1.39</mysql-connector>-->
     </properties>
 
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -46,7 +60,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -75,7 +88,11 @@
             <artifactId>gson</artifactId>
             <version>2.8.2</version>
         </dependency>
+
     </dependencies>
+
+
+
 
     <build>
         <plugins>
